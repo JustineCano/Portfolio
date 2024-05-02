@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 50vh;
+    background: #2E3A42;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #A4B4BF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav-bar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px
+}
+
+section {
+    margin-top: 25%;
+    margin-right: 35%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 88%;
+    align-items: center;
+}
+
+.col-left {
+    flex-basis: 50%;
+}
+
+.line {
+    color: white;
+    font-size: 2.5rem;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(25) infinite, cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+p {
+    color: white;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.icons,
+.fa {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.profile-image {
+    position: absolute;
+    top: 27%;
+    left: 60%;
+    align-content: center;
+    min-height: 50vh;
+    width: 20%;
+}
+
+.image {
+    margin: auto 0;
+    width: 380px;
+    border-radius: 55% 45% 55% 45%;
+    overflow: hidden;
+    animation: imgFloat 7s ease-in-out infinite;
+}
+
+.profile-image img {
+    width: 380px;
+    height: 10%;
+    object-fit: cover;
+}
+
+@keyframes imgFloat {
+    50% {
+        transform: translateY(10px);
+        border-radius: 45% 55% 45%;
+    }
+}
